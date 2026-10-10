@@ -1,0 +1,33 @@
+name: 🛠️ Request a New Tool
+description: Suggest a new developer utility or tool for DevForge
+labels: ["enhancement", "tool-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a developer tool that would save time? Let us know!
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool Name
+      description: What is the name of the tool?
+      placeholder: "e.g., Cron Expression Parser / CSS Gradient Generator"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Tool Description & Use Case
+      description: How should this tool work, and what problems does it solve?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Security & Crypto
+        - Formatters & Beautifiers
+        - Encoders & Converters
+        - Mock & Generators
+        - Network & HTTP

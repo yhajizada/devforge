@@ -1,0 +1,24 @@
+name: 🐛 Bug Report
+description: File a bug report for an existing tool
+labels: ["bug"]
+body:
+  - type: input
+    id: tool
+    attributes:
+      label: Affected Tool or CLI Command
+      placeholder: "e.g., JWT Decoder or devforge hash"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: "1. Paste token...\n2. Click format..."
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Expected vs Actual Behavior
+    validations:
+      required: true
